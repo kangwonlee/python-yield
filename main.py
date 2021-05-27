@@ -1,6 +1,16 @@
-for i in (1, 2, 3, 4,):
-  if 2 < i:
-    break
-  print("i =", i)
+# lp3thw p. 142
 
-print("i after the for loop =", i)
+def zzz():
+
+  print("05 1")
+  yield(1)
+
+  print("08 a")
+  yield('a')
+
+  print("11 2")
+  yield(2)
+
+
+for i in zzz():
+  print("16 i =", i)
